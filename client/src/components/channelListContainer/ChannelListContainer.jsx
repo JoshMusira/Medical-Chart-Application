@@ -1,6 +1,8 @@
 import React from 'react'
 import '../channelListContainer/channelListContainer.css'
-import { ChannelSearch, CompanyHeader, SideBar } from '../../exports/exports'
+import { TeamChannelList, ChannelSearch, CompanyHeader, SideBar } from '../../exports/exports'
+
+import { ChannelList, useChatContext } from 'stream-chat-react'
 
 const ChannelListContainer = () => {
     return (
@@ -9,6 +11,17 @@ const ChannelListContainer = () => {
             <div className="channel-list__list__wrapper">
                 <CompanyHeader />
                 <ChannelSearch />
+                <ChannelList
+                    filters={{}}
+                    channelRenderFilterFn={() => { }}
+                    List={(listprops) => (
+                        <TeamChannelList
+                            {...listprops}
+                            type="team"
+                        />
+                    )}
+                />
+
             </div>
         </>
     )

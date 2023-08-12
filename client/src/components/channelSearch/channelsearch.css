@@ -26,7 +26,7 @@
 .channel-search__input__icon {
   width: 32px;
   display: flex;
-  /* color: red; */
+  color: white;
   font-size: 20px;
   justify-content: center;
 }
