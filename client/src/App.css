@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #005fff;
+  --primary-color-alpha: #005fff1a;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.auth__form-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}

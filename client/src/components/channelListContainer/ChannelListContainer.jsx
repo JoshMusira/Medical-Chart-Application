@@ -1,9 +1,12 @@
 import React from 'react'
 import '../channelListContainer/channelListContainer.css'
+import { SideBar } from '../../exports/exports'
 
 const ChannelListContainer = () => {
     return (
-        <div>ChannelListContainer</div>
+        <>
+            <SideBar />
+        </>
     )
 }
 
