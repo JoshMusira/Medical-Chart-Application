@@ -1,11 +1,15 @@
 import React from 'react'
 import '../channelListContainer/channelListContainer.css'
-import { SideBar } from '../../exports/exports'
+import { ChannelSearch, CompanyHeader, SideBar } from '../../exports/exports'
 
 const ChannelListContainer = () => {
     return (
         <>
             <SideBar />
+            <div className="channel-list__list__wrapper">
+                <CompanyHeader />
+                <ChannelSearch />
+            </div>
         </>
     )
 }

@@ -14,8 +14,9 @@ body {
   height: 100%;
 }
 
-.auth__form-container {
-  min-height: 100vh;
+.app__wrapper {
   display: flex;
-  flex-direction: row;
+  flex: 1;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.33) 0px 1px 4px 0px;
 }

@@ -1,5 +1,7 @@
 import HospitalIcon from '../../assets/hospital.png'
 import LogoutIcon from '../../assets/logout.png'
+import './sidebar.css'
+
 const SideBar = () => {
     return (
         <div className="channel-list__sidebar">
@@ -9,7 +11,7 @@ const SideBar = () => {
                 </div>
             </div>
             <div className="channel-list__sidebar__icon2">
-                <div className="icon1__inner">
+                <div className="icon2__inner">
                     <img src={LogoutIcon} alt="LogoutIcon" width='30' />
                 </div>
             </div>
