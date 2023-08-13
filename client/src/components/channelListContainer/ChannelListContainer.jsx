@@ -1,6 +1,6 @@
 import React from 'react'
 import '../channelListContainer/channelListContainer.css'
-import { TeamChannelList, ChannelSearch, CompanyHeader, SideBar } from '../../exports/exports'
+import { TeamChannelList, ChannelSearch, CompanyHeader, SideBar, TeamChannelPreview } from '../../exports/exports'
 
 import { ChannelList, useChatContext } from 'stream-chat-react'
 
@@ -18,6 +18,12 @@ const ChannelListContainer = () => {
                         <TeamChannelList
                             {...listprops}
                             type="team"
+                        />
+                    )}
+                    Preview={(previewprops) => (
+                        <TeamChannelPreview
+                            {...previewprops}
+                            type='team'
                         />
                     )}
                 />

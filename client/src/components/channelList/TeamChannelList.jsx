@@ -1,3 +1,4 @@
+import './teamchannellist.css'
 
 const TeamChannelList = ({ children, error = false, loading, type }) => {
     if (error) {
