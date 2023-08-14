@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { initialState } from "../types/types"
+import './auth.css'
+import signinImage from '../assets/signup.jpg';
 
 const Auth = () => {
     const [form, setForm] = useState(initialState);
@@ -13,6 +15,11 @@ const Auth = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
     }
+
+    const switchMode = () => {
+        setIsSignup((prevIsSignup) => !prevIsSignup);
+    }
+
     return (
         <div className="auth__form-container">
             <div className="auth__form-container_fields">
@@ -96,13 +103,16 @@ const Auth = () => {
                                     ? "Already have an account?"
                                     : "Don't have an account?"
                                 }
-                                <span >
+                                <span onClick={switchMode}>
                                     {isSignup ? 'Sign In' : 'Sign Up'}
                                 </span>
                             </p>
                         </div>
                     </form>
                 </div>
+            </div>
+            <div className="auth__form-container_image">
+                <img src={signinImage} alt="sign in" />
             </div>
         </div>
     )
